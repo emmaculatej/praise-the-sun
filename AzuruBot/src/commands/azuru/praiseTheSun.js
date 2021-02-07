@@ -12,7 +12,7 @@ module.exports = class PraiseTheSunCommand extends BaseCommand {
     const praiseSubEmbedded = new MessageEmbed()
     .setTitle(`${message.author.username} has praised the sun!`)
     .attachFiles(attachment)
-    .setImage('attachment://aiseTheSunImage.gif');
+    .setImage('attachment://praiseTheSunImage.gif');
 
     message.channel.send(praiseSubEmbedded);
   }
