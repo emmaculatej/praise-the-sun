@@ -1,7 +1,7 @@
 
 const { Client } = require('discord.js');
 const { registerCommands, registerEvents } = require('./utils/registry');
-const config = require('../slappey.json');
+
 const client = new Client();
 
 (async () => {
@@ -10,6 +10,6 @@ const client = new Client();
   client.prefix = config.prefix;
   await registerCommands(client, '../commands');
   await registerEvents(client, '../events');
-  await client.login(process.env.CLIENT_TOKEN);
+  await client.login(process.env_CLIENT_TOKEN);
 })();
 
