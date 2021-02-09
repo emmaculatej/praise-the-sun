@@ -8,7 +8,7 @@ module.exports = class PraiseTheSunCommand extends BaseCommand {
 
   async run(client, message, args) 
   {
-    const attachment = new MessageAttachment('./src/images/praiseTheSunImage.gif', 'raiseTheSunImage.gif');
+    const attachment = new MessageAttachment('./AzuruBot/src/images/praiseTheSunImage.gif', 'praiseTheSunImage.gif');
     const praiseSubEmbedded = new MessageEmbed()
     .setTitle(`${message.author.username} has praised the sun!`)
     .attachFiles(attachment)
