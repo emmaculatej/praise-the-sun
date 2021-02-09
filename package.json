@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "slappey": "^3.0.0"
   }
 }
