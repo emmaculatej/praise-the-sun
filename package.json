@@ -1,18 +1,20 @@
 {
   "name": "AzuruBot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
-    "start": "node ./src/index.js",
+    "dev": "nodemon ./AzuruBot/src/index.js",
+    "start": "node ./AzuruBot/src/index.js",
     "build": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
