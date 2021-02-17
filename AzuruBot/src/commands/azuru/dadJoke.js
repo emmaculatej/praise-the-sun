@@ -24,15 +24,11 @@ module.exports = class DadJokeCommand extends BaseCommand {
     data : 
     {
       id: '',
-      joke: '',
+      joke: ''
     }
   })
   .then(response => {
     var jokeResult = response.data;
-    if(jokeResult.status !== 200)
-    {
-      throw error;
-    }
     message.channel.send(jokeResult.joke);
   })
   .catch(error => {
