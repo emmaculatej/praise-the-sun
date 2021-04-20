@@ -2,7 +2,7 @@
 const { Client } = require('discord.js');
 const { registerCommands, registerEvents } = require('./utils/registry');
 
-const client = new Client();
+const client = new Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 (async () => {
   client.commands = new Map();
