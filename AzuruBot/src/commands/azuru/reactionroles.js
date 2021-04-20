@@ -8,7 +8,7 @@ module.exports = class ReactionRolesCommand extends BaseCommand {
 
   async run(client, message, args, Discord) 
   {
-    const channel = '834167504103669760';
+    const channel = '834173050698203187';
     const movie = message.guild.roles.cache.find(role => role.name === "Movies");
     //const blue = message.guild.roles.cache.find(role => role.name === "Blue");
 
